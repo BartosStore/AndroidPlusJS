@@ -3,9 +3,12 @@ package cz.mira.flakeman;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.ConsoleMessage;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
@@ -29,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
         browser.setScrollBarStyle(View.SCROLLBARS_OUTSIDE_OVERLAY);
         browser.setScrollbarFadingEnabled(true);
         browser.addJavascriptInterface(new WebAppInterface(this), "Android");
+
+        browser.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public boolean onConsoleMessage(ConsoleMessage cm) {
+                Log.d("MyApplication", cm.message() + " -- From line "
+                        + cm.lineNumber() + " of "
+                        + cm.sourceId() );
+                return true;
+            }
+        });
 
         //browser.loadUrl("http://www.speedhunters.com/");
         browser.loadUrl("file:///android_asset/index.html");
