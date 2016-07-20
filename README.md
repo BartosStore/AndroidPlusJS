@@ -6,7 +6,7 @@ This is simple Android application with **perspective purpose**. The first idea 
 Motivation
 -------------
 
-I am a developer in the Aplikacni Software[^apso] company situated in Hradec Kralove. After the summer camp at CityU my first task will be including graphs to our desktop ERP system. With separated, reusable graph components we can easily build Android app with same feature.
+I am a developer in the Aplikacni Software (www.apso.cz) company situated in Hradec Kralove. After the summer camp at CityU my first task will be including graphs to our desktop ERP system. With separated, reusable graph components we can easily build Android app with same feature.
 
 Purpose
 -------------
@@ -23,5 +23,3 @@ How
 3) Create bridge between Android app and Javascript (WebAppInterface class, annotated methods with @JavascriptInterface)
  
 4) Thanks to WebAppInterface send data to WebView component and draw graph
-
-  [^apso]: [ApSo](www.apso.cz) is a company from Czech Republic.
