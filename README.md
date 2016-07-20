@@ -13,4 +13,15 @@ Purpose
 
 Purpose is to practise developing applications including Java and JavaScript. Learn how to handle communication between these two languages and how to send data from back-end to JS graph.
 
+How
+-------------
+
+1) Create WebView component
+ 
+2) Paste HTML template into "assets"  dir
+ 
+3) Create bridge between Android app and Javascript (WebAppInterface class, annotated methods with @JavascriptInterface)
+ 
+4) Thanks to WebAppInterface send data to WebView component and draw graph
+
   [^apso]: [ApSo](www.apso.cz) is a company from Czech Republic.
