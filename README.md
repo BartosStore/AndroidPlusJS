@@ -6,7 +6,7 @@ This is simple Android application with **perspective purpose**. The first idea 
 Motivation
 -------------
 
-I am a developer in the Aplikacni Software (www.apso.cz) company situated in Hradec Kralove. After the summer camp at CityU my first task will be including graphs to our desktop ERP system. With separated, reusable graph components we can easily build Android app with same feature.
+I am a developer in the Aplikacni Software (www.apso.cz) company situated in Hradec Kralove. After the summer camp in CityU my first task will be including graphs to our desktop ERP system. With separated, reusable graph components we can easily build Android app with same feature.
 
 Purpose
 -------------
